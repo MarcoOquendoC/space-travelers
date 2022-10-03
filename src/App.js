@@ -1,27 +1,24 @@
-import './App.css';
+/* eslint-disable */
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dragons from './components/Dragon';
+import Missions from './components/Missions';
+import Rockets from './components/Rockets'
+import MyProfile from './components/MyProfile';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// eslint-disable-next-line react/prefer-stateless-function
+class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Rockets />} />
+          <Route path="/Missions" element={<Missions />} />
+          <Route path="/Dragons" element={<Dragons />} />
+          <Route path="/Myprofile" element={<MyProfile />} />
+        </Routes>
+      </BrowserRouter>
+    );
+  }
 }
-
 export default App;
