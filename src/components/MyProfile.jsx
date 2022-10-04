@@ -1,13 +1,19 @@
 import React from 'react';
-import Navigation from './Navbar';
 
-function MyProfile() {
+function Profile() {
   return (
-    <div>
-      <Navigation />
-      MyProfile : do what ever you want my friend
+    <div className="profiles">
+      <div>
+        <h2>My Rockets</h2>
+      </div>
+      <div>
+        <h2>My Dragons</h2>
+      </div>
+      <div>
+        <h2>My Missions</h2>
+      </div>
     </div>
   );
 }
 
-export default MyProfile;
+export default Profile;
