@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Badge } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { reserveRocket } from '../../redux/rockets/RocketSlice';
+import { reserveRocket } from '../../redux/rockets/rockets';
 import '../../Styles/rocketList.css';
 
 const RocketCardItem = (props) => {

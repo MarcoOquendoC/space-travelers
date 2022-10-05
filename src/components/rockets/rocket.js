@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import RocketItemsList from './rocketList';
-import { fetchingRocketsInfo } from '../../redux/rockets/RocketSlice';
+import { fetchingRocketsInfo } from '../../redux/rockets/rockets';
 
 let saveReserve = false;
 const MyRockets = () => {

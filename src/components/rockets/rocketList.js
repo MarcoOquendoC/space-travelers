@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import RocketCardItem from './rocketcard';
+import RocketCardItem from './rocketCard';
 import '../../Styles/rocketList.css';
 
 const RocketItemsList = (props) => {
