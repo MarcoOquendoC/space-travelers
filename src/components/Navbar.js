@@ -1,29 +1,50 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from './assets/logo.png';
+import '../Styles/Navbar.css';
+import image from './assets/logo.png';
 
-const Navigation = () => {
-  const hello = "Space Travelers' Hub";
+export default function Navigation() {
   return (
-    <div>
-      <header>
-        <div className="logoContainer">
-          <img className="logo" src={logo} alt="logo" />
-          <p className="logoP">
-            {hello}
-          </p>
-        </div>
-        <ul className="links">
-          <li className="link"><NavLink to="/">Display</NavLink></li>
-          <li className="link"><NavLink to="/Missions">Missions</NavLink></li>
-          <li className="link"><NavLink to="/Dragons">Dragons</NavLink></li>
-          <li className="link">|</li>
-          <li className="link"><NavLink to="/Myprofile">MyProfile</NavLink></li>
-        </ul>
-      </header>
-      <hr />
-    </div>
-  );
-};
+    <nav>
+      <div className="logo-holder">
+        <img src={image} alt="planet" className="logo" />
+        <h2 className="hText">Space Travelers</h2>
+      </div>
+      <ul>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/rockets"
+          >
+            Rockets
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/missions"
+          >
+            Mission
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/dragons"
+          >
+            Dragons
+          </NavLink>
+        </li>
 
-export default Navigation;
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/MyProfile"
+          >
+            My Profile
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
+}
