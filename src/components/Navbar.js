@@ -8,7 +8,7 @@ export default function Navigation() {
     <nav>
       <div className="logo-holder">
         <img src={image} alt="planet" className="logo" />
-        <h2 className="hText">Space Travelers</h2>
+        <h1 className="hText">Space Travelers&apos; Hub</h1>
       </div>
       <ul>
         <li>

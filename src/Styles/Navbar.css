@@ -35,7 +35,7 @@ ul li a:hover {
 
 .logo {
   width: 10%;
-  maheight: 20vh;
+  max-height: 20vh;
 }
 
 .hText {
