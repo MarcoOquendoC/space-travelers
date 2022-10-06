@@ -1,0 +1,53 @@
+.card-holder {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.5rem 0 1.5rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3rem;
+}
+
+.rocket-img {
+  width: 100%;
+  border: 1px solid grey;
+}
+
+.img-holder {
+  width: 100%;
+}
+
+.info-holder {
+  text-align: start;
+}
+
+.btn-reserve {
+  padding: 10px;
+  color: #fff;
+  background-color: #0096ff;
+  border: #fff;
+  border-radius: 3px;
+}
+
+.btn-cancel {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.btn-cancel:hover {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+
+.reserved {
+  background-color: #088f8f;
+  padding: 5px;
+  color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 1vw;
+}
