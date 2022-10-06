@@ -1,13 +1,17 @@
 import React from 'react';
-import Navigation from '../Navbar';
 
-function MyProfile() {
-  return (
+const MyProfile = () => (
+  <div className="profiles">
     <div>
-      <Navigation />
-      MyProfile : do what ever you want my friend
+      <h2>My Rockets</h2>
     </div>
-  );
-}
+    <div>
+      <h2>My Dragons</h2>
+    </div>
+    <div>
+      <h2>My Missions</h2>
+    </div>
+  </div>
+);
 
-export default MyProfile;
+export default { MyProfile };
