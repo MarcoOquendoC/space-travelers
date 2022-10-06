@@ -35,7 +35,7 @@ export default function Navigation() {
             Dragons
           </NavLink>
         </li>
-
+        <li><hr /></li>
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? 'active' : '')}
