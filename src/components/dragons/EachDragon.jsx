@@ -33,10 +33,16 @@ const Dragon = (props) => {
           {description}
         </p>
         {dragonReserved === true
-          ? (<button type="button" className="dragon-info-button dragon-cancel-reserve" onClick={cancelReservation} id={dragonId}>
-            Cancel Dragon Reservation</button>)
-          : (<button type="button" className="dragon-info-button dragon-reserve" onClick={reserve} id={dragonId}>
-            Reserve Dragon</button>)}
+          ? (
+            <button type="button" className="dragon-info-button dragon-cancel-reserve" onClick={cancelReservation} id={dragonId}>
+              Cancel Dragon Reservation
+            </button>
+          )
+          : (
+            <button type="button" className="dragon-info-button dragon-reserve" onClick={reserve} id={dragonId}>
+              Reserve Dragon
+            </button>
+          )}
       </div>
     </div>
   );
