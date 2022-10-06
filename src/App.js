@@ -12,7 +12,6 @@ function App() {
       <div className="App">
         <div className="nav">
           <Navbar />
-          <hr />
         </div>
         <section className="content">
           <Routes>
