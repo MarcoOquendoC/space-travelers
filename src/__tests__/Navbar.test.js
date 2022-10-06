@@ -2,13 +2,13 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
-import NavBar from '../components/NavBar';
+import Navigation from '../components/Navbar';
 
 describe('Test for Navbar component', () => {
   it('Renders Navbar correctly', () => {
     const navbar = render(
       <BrowserRouter>
-        <NavBar />
+        <Navigation />
       </BrowserRouter>,
     );
     expect(navbar).toMatchSnapshot();
@@ -17,7 +17,7 @@ describe('Test for Navbar component', () => {
   it('Check for heading in the navbar \'Space Traveler\'s Hub\' is in the document', () => {
     render(
       <BrowserRouter>
-        <NavBar />
+        <Navigation />
       </BrowserRouter>,
     );
     expect(
