@@ -1,28 +1,23 @@
-/* eslint-disable */
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Dragons from './components/Dragon';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Missions from './components/missions/Missions';
-import Rockets from './components/Rockets'
-import MyProfile from './components/MyProfile';
-import Navigation from './components/Navbar';
 
-// eslint-disable-next-line react/prefer-stateless-function
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Navigation />
-        <BrowserRouter>
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <div className="nav">
+          <Navbar />
+          <hr />
+        </div>
+        <section className="content">
           <Routes>
-            <Route path="/" element={<Rockets />} />
-            <Route path="/Missions" element={<Missions />} />
-            <Route path="/Dragons" element={<Dragons />} />
-            <Route path="/Myprofile" element={<MyProfile />} />
+            <Route path="/missions" element={<Missions />} />
           </Routes>
-        </BrowserRouter>
+        </section>
       </div>
-    );
-  }
+    </Router>
+  );
 }
+
 export default App;
