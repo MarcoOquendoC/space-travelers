@@ -35,7 +35,7 @@ ul li a:hover {
 
 .logo {
   width: 10%;
-  height: 20vh;
+  maheight: 20vh;
 }
 
 .hText {
@@ -46,4 +46,9 @@ ul li a:hover {
   display: flex;
   gap: 8px;
   margin: 0 0 0 1rem;
+}
+
+hr {
+  rotate: 90deg;
+  width: 2rem;
 }
