@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MissionRow from './MissionRow';
-import './missions.css';
 
 const MissionsTable = (props) => {
   const { missions } = props;

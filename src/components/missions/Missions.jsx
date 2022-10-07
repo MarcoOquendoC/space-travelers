@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import MissionsTable from './MissionsTable';
 import { fetchingMissionsInfo } from '../../redux/missions/missions';
+import '../../Styles/missions.css';
 
 let saveJoin = false;
 

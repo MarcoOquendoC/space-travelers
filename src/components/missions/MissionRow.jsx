@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { toggleJoinMission } from '../../redux/missions/missions';
-import './missions.css';
 
 const MissionRow = (props) => {
   const { mission } = props;
@@ -19,22 +18,20 @@ const MissionRow = (props) => {
   return (
     <tr className="missionRow">
       <td className="missionName">{name}</td>
-
       <td className="missionInfo">{description}</td>
-
       <td className="missionStatus">
-        { !joinStatus ? (
-          <>Not a Member</>
+        { joinStatus ? (
+          <span className="badge1">Active Member</span>
         ) : (
-          <>Active Member</>
+          <span className="badge2">Not a Member</span>
         )}
       </td>
 
       <td className="missionToggle">
-        { !joinStatus ? (
-          <button id={`j${id}`} className="missionBtn" type="button" onClick={toggleJoinEvent}>Join Mission</button>
+        { joinStatus ? (
+          <button id={`l${id}`} className={`missionBtn ${joinStatus ? 'badge3' : 'badge4'}`} type="button" onClick={toggleJoinEvent}>Leave Mission</button>
         ) : (
-          <button id={`l${id}`} className="missionBtn" type="button" onClick={toggleJoinEvent}>Leave Mission</button>
+          <button id={`j${id}`} className={`missionBtn ${joinStatus ? 'badge3' : 'badge4'}`} type="button" onClick={toggleJoinEvent}>Join Mission</button>
         )}
       </td>
     </tr>
