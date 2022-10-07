@@ -22,7 +22,6 @@ body {
 }
 
 .profile::before {
-  content: '|';
   margin-right: 1.2rem;
   font-weight: bold;
   color: #333;
@@ -69,7 +68,7 @@ ul.nav-container-items {
 
 .logo-container img {
   height: 60px;
-  width: 4rem;
+  width: 5rem;
 }
 
 .nav-container {
