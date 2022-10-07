@@ -16,7 +16,7 @@ export const fetchingRocketsInfo = createAsyncThunk(
       reserved: false,
     }));
 
-    return rocketsItemInfo;
+    return rocketsItemInfo;g
   },
 );
 
