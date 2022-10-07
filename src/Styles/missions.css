@@ -1,0 +1,79 @@
+table {
+  outline: auto;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 1px;
+  border-spacing: 0.4rem;
+}
+
+thead .missionStatus {
+  width: 130px;
+  text-align: start;
+}
+
+thead .missionToggle {
+  color: white;
+  width: 130px;
+}
+
+.missionName,
+.missionInfo {
+  text-align: start;
+}
+
+tbody .missionName {
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: 600;
+}
+
+tbody button {
+  cursor: pointer;
+}
+
+.missionInfo {
+  padding: 0 2rem 0 0;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: rgb(255, 255, 255);
+}
+
+tbody tr:nth-child(odd) {
+  background: rgb(242, 242, 242);
+}
+
+.badge1 {
+  color: rgb(247, 247, 247);
+  border-radius: 5px;
+  padding: 2px 8px;
+  background-color: rgb(24, 162, 184);
+  cursor: default;
+}
+
+.badge2 {
+  color: rgb(247, 247, 247);
+  border-radius: 5px;
+  padding: 2px 8px;
+  background-color: rgb(109, 117, 125);
+  cursor: default;
+}
+
+.badge3 {
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  color: rgb(220, 56, 70);
+  border: 1px solid rgb(220, 56, 70);
+}
+
+.badge4 {
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  color: rgb(64, 69, 75);
+  border: 1px solid rgb(64, 69, 75);
+}
+
+tbody tr:hover {
+  background-color: rgb(189, 210, 228);
+}
