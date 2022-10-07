@@ -1,7 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import './myProfile.css';
 
-function Profile() {
+function MyProfile() {
+  // rockets
+  const ourRockets = useSelector((state) => state.rockets);
+  const rocketsReserve = ourRockets.filter((rocket) => rocket.reserved === true);
+
   // Dragons
   const dragons = useSelector((state) => state.dragons);
   const reservedDragons = dragons.filter((dragon) => dragon.dragonReserved);
@@ -22,8 +27,20 @@ function Profile() {
         <h2>My Dragons</h2>
         <table className="table table-bordered">{listReservedDragons}</table>
       </div>
+      <div className="rockets">
+        <h2>My Rockets</h2>
+        <div className="profile">
+          {
+            rocketsReserve.map((rocket) => (
+              <div key={rocket.id} className="item">
+                <p>{rocket.name}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
     </div>
   );
 }
 
-export default Profile;
+export default MyProfile;
