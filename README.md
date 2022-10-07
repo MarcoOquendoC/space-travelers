@@ -49,7 +49,7 @@ GitHub: [@Nganje](https://github.com/asnganje)
 LinkedIn: [@Nganje](https://www.linkedin.com/in/abdulrahman-nganje-a6436935/)
 
 ### 👤 Ademola Owoeye
-GitHub: [@githubhandle](https://github.com/Ademola-coding)
+GitHub: [@Ademola-coding](https://github.com/Ademola-coding)
 
 ## Acknowledgments
 
