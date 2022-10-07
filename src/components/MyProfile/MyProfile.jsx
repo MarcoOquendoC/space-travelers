@@ -5,7 +5,31 @@ import './myProfile.css';
 function MyProfile() {
   // rockets
   const ourRockets = useSelector((state) => state.rockets);
-  const rocketsReserve = ourRockets.filter((rocket) => rocket.reserved === true);
+  const reservedRockets = ourRockets.filter((rocket) => rocket.reserved);
+
+  const listReservedRockets = reservedRockets.map((reservedRocket) => (
+    <tbody key={reservedRocket.id}>
+      <tr>
+        <td>
+          {reservedRocket.name}
+        </td>
+      </tr>
+    </tbody>
+  ));
+
+  // Missions
+  const missions = useSelector((state) => state.missions);
+  const joinedMissions = missions.filter((mission) => mission.joinStatus);
+
+  const listJoinedMissions = joinedMissions.map((joinedMission) => (
+    <tbody key={joinedMission.id}>
+      <tr>
+        <td>
+          {joinedMission.name}
+        </td>
+      </tr>
+    </tbody>
+  ));
 
   // Dragons
   const dragons = useSelector((state) => state.dragons);
@@ -24,20 +48,16 @@ function MyProfile() {
   return (
     <div className="profiles">
       <div>
-        <h2>My Dragons</h2>
-        <table className="table table-bordered">{listReservedDragons}</table>
-      </div>
-      <div className="rockets">
         <h2>My Rockets</h2>
-        <div className="profile">
-          {
-            rocketsReserve.map((rocket) => (
-              <div key={rocket.id} className="item">
-                <p>{rocket.name}</p>
-              </div>
-            ))
-          }
-        </div>
+        <table className="table table-bordered width300">{listReservedRockets}</table>
+      </div>
+      <div>
+        <h2>My Missions</h2>
+        <table className="table table-bordered width300">{listJoinedMissions}</table>
+      </div>
+      <div>
+        <h2>My Dragons</h2>
+        <table className="table table-bordered width300">{listReservedDragons}</table>
       </div>
     </div>
   );
