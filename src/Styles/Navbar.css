@@ -1,0 +1,55 @@
+nav {
+  padding: 24px 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  outline: none;
+  font-weight: bold;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #121212;
+  letter-spacing: 1.9px;
+}
+
+ul li a:hover {
+  color: #0290ff;
+}
+
+.active {
+  border-bottom: 1px solid steelblue;
+  color: steelblue;
+}
+
+.logo {
+  width: 10%;
+  max-height: 20vh;
+}
+
+.hText {
+  align-self: center;
+}
+
+.logo-holder {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 0 1rem;
+}
+
+hr {
+  rotate: 90deg;
+  width: 2rem;
+}
