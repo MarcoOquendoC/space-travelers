@@ -39,16 +39,16 @@ To get a local copy up and running follow these simple steps.
 - [Link comming soon]()
 
 ## Author
-### 👤 Marco Oquendo
+<img src="https://ca.slack-edge.com/T47CT8XPG-U03GYGT3LBA-0bd15eb5c4a7-512" alt="Marco" width="40" height="40" /> **Marco Oquendo**
 - GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC)
 - Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc)
 - LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/vinicio-oquendo-4a289156/)
 
-### 👤 Abdulrahman Nganje
+<img src="https://ca.slack-edge.com/T47CT8XPG-U03HV4CDM62-bfa5a0269208-512" alt="Marco" width="40" height="40" /> **Abdulrahman Nganje**
 GitHub: [@Nganje](https://github.com/asnganje)
 LinkedIn: [@Nganje](https://www.linkedin.com/in/abdulrahman-nganje-a6436935/)
 
-### 👤 Ademola Owoeye
+<img src="https://ca.slack-edge.com/T47CT8XPG-U03J1MD3B0T-9c1254fd9ef0-512" alt="Marco" width="40" height="40" /> **Ademola Owoeye**
 GitHub: [@Ademola-coding](https://github.com/Ademola-coding)
 
 ## Acknowledgments
