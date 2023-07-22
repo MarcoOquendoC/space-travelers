@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple steps.
 - **REACT JS + REDUX:** JavaScript library for building user interface.
 
 ## 🌎 Live Demo:
-- [Link comming soon]()
+- [Space Traveler's Hub deployed page](https://marcooquendoc.github.io/space-travelers/)
 
 ## Author
 <img src="https://ca.slack-edge.com/T47CT8XPG-U03GYGT3LBA-0bd15eb5c4a7-512" alt="Marco" width="40" height="40" /> **Marco Oquendo**
